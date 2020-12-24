@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Langar&display=swap');
+
+*{
+    margin: 10px;
+    background-color: antiquewhite;
+}
+.delete_item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color:burlywood;
+    height: 150px;
+}
+.areu{
+    font-family: 'Andika New Basic', sans-serif;
+    font-size: 20px;
+    background-color:burlywood;
+}
+.del_form{
+    background-color:burlywood;
+}
+.del_form input{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    font-size: 15px;
+    height: 25px;
+}
+.cancel_button{
+    display: block;
+    margin: 5px auto;
+    width: 100px;
+    height: 25px;
+}
+.cancel_button a{
+    text-decoration:none;
+    color: black;
+    font-size:15px;
+}

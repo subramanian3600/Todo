@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>Welcome !</header>
+    <h4 class="todolist_text">ToDo List</h4>
+    <form action="" method="POST" class="todo_form">
+        {% csrf_token %}
+        {{form.title}}
+        {{form.check}}
+        <input type="submit" name="todo_add" id="todo_add">
+    </form>
+    <div class="todo_div">
+        <ul class="todo_ul">
+            {% for task in tasks %}
+            <div class="list_div">
+                {% if task.check == False %}
+                <li class="new_todo">{{task.title}}</li>
+                <a class="del_link" href="{% url 'delete' task.id %}">Delete</a>
+                {% endif %}
+                
+            </div>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <h3 for="completed" class="completed_text">Completed List</h3>
+    
+    <div class="completed">
+        <ul class="check_ul">
+        {% for task in tasks %}
+            {% if task.check == True %}
+            <div class="check_div">
+            <li class="check_todo">{{task.title}}</li>
+            <a class="del_link" href="{% url 'delete' task.id %}">Delete</a>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+    
+</body>
+<script src="{% static 'js/app.js' %}"></script>
+</html>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Langar&display=swap');
+
+
+body{
+    background-color: antiquewhite;
+}
+header{
+    font-size: 30px;
+    text-align: center;
+    background-color:azure;
+    font-family: 'Andika New Basic', sans-serif;
+}
+.todolist_text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.todo_form{
+    display: flex;
+    justify-content: center;
+}
+.todo_div{
+    width: 300px;
+    margin: 20px auto;
+    background-color: aliceblue;
+}
+.todo_ul{
+    list-style-type: none;
+}
+#todo_add{
+    margin: 0px 4px;
+}
+.list_div{
+    display: flex;
+    justify-content: center;
+}
+.check{
+    margin: 8px 2px;
+    width: 20px;
+    height: 20px;
+}
+.new_todo{
+    margin: 5px 5px;
+    font-size: 20px;
+    font-family: 'Langar', cursive;
+}
+.del_link{
+    text-decoration: none;
+    margin: 8px 5px;
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 10px;
+    font-family: 'Andika New Basic', sans-serif;
+}
+.completed_text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.completed{
+    width: 300px;
+    margin: 20px auto;
+    background-color: aliceblue;
+}
+.check_div{
+    display: flex;
+    justify-content: center;
+}
+.check_ul{
+    list-style-type: none;
+}
+.check_todo{
+    margin: 5px 5px;
+    font-size: 20px;
+    font-family: 'Langar', cursive;
+}
+
+

@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <link rel="stylesheet" href="{% static 'css/del_style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="delete_item">
+            <p class="areu">Are you Sure Delete ?</p>
+            <form action="" method="POST" class="del_form">
+                {% csrf_token %}
+                <input type="submit" name="confirm" value="Confirm">
+            </form>
+        <button class="cancel_button"><a href="{% url 'home' %}">Cancel</a></button>
+        </div>
+    </header>
+</body>
+</html>
