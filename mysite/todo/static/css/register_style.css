@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Nova+Flat&display=swap');
+
+*{
+    background-color:#7579e7;
+}
+header{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Langar', cursive;
+
+}
+.register_div{
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background-color:#a3d8f4;
+}
+.register_text{
+    text-align: center;
+    font-size: 25px;
+    background-color:white;
+    font-family: 'Langar', cursive;
+
+}
+.register_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    margin: 10px;
+    background-color:#a3d8f4;
+}
+.register_form_input{
+    margin: 8px;
+    background-color:white;
+}
+#id_username{
+    margin: 8px;
+    background-color:white;
+}
+#id_email{
+    margin: 8px;
+    background-color:white;
+}
+#id_password1{
+    margin: 8px;
+    background-color:white;
+}
+#id_password2{
+    margin: 8px;
+    background-color:white;
+}
+.register_form label{
+    margin: 5px;
+    background-color:#a3d8f4;
+    font-family: 'Nova Flat', cursive;
+}
+.field_label{
+    margin: 5px;
+    background-color:#a3d8f4;
+    font-family: 'Nova Flat', cursive;
+}
+.acc_created_text{
+    background-color: #fff;
+    margin: 10px;
+    font-family: 'Nova Flat', cursive;
+
+}
+.register_submit{
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    background-color: #9ab3f5;
+    font-family: 'Nova Flat', cursive;
+}
+.alacc h6{
+    background-color: #fff;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Nova Flat', cursive;
+}
+.alacc a{
+    background-color: #fff;
+    text-decoration: none;
+}
+.newacc h6{
+    background-color: #fff;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Nova Flat', cursive;
+
+}
+.newacc a{
+    background-color: #fff;
+    text-decoration: none;
+}
+
+

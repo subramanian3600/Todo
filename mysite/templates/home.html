@@ -9,12 +9,11 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <header>Welcome !</header>
-    <h4 class="todolist_text">ToDo List</h4>
+    <header>Welcome {{request.user}} !</header>
+    <h4 class="todolist_text">Your ToDo List</h4>
     <form action="" method="POST" class="todo_form">
         {% csrf_token %}
         {{form.title}}
-        {{form.check}}
         <input type="submit" name="todo_add" id="todo_add">
     </form>
     <div class="todo_div">
@@ -23,7 +22,8 @@
             <div class="list_div">
                 {% if task.check == False %}
                 <li class="new_todo">{{task.title}}</li>
-                <a class="del_link" href="{% url 'delete' task.id %}">Delete</a>
+                <a class="del_link" href="{% url 'update' task.id %}"><img src="{% static 'images/svg/update_icon.svg' %}" alt="Update"></a>
+                <a class="del_link" href="{% url 'delete' task.id %}"><img src="{% static 'images/svg/delete_icon.svg' %}" alt="Delete"></a>
                 {% endif %}
                 
             </div>
@@ -39,11 +39,15 @@
             {% if task.check == True %}
             <div class="check_div">
             <li class="check_todo">{{task.title}}</li>
-            <a class="del_link" href="{% url 'delete' task.id %}">Delete</a>
+            <a class="del_link" href="{% url 'update' task.id %}"><img src="{% static 'images/svg/update_icon.svg' %}" alt="Update"></a>
+            <a class="del_link" href="{% url 'delete' task.id %}"><img src="{% static 'images/svg/delete_icon.svg' %}" alt="Delete"> </a>
             </div>
             {% endif %}
         {% endfor %}
         </ul>
+    </div>
+    <div class="logout_div">
+        <a href="{% url 'logout' %}">Logout</a>
     </div>
     
 </body>

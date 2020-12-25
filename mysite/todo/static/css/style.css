@@ -45,6 +45,7 @@ header{
     font-size: 20px;
     font-family: 'Langar', cursive;
 }
+/*
 .del_link{
     text-decoration: none;
     margin: 8px 5px;
@@ -52,6 +53,13 @@ header{
     padding: 2px;
     font-size: 10px;
     font-family: 'Andika New Basic', sans-serif;
+}
+*/
+.del_link img{
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin: 8px 5px;
 }
 .completed_text{
     text-align: center;
@@ -76,5 +84,17 @@ header{
     font-size: 20px;
     font-family: 'Langar', cursive;
 }
-
+.logout_div{
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.logout_div a{
+    margin:4px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 

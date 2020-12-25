@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/register_style.css' %}">
+</head>
+<body>
+    <header>ToDo App</header>
+    <div class="register_div">
+        <h5 class="register_text">Login</h5>
+        {%  for message in messages %}
+        <p class="acc_created_text">{{message}}</p>
+        {% endfor %}
+        <form action="" method="POST" class="register_form">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="username" name="username" required class="register_form_input">
+            <label for="email">Password:</label>
+            <input type="password" name="password" required class="register_form_input">
+            <input type="submit" value="Login" class="register_submit">
+        </form>
+    
+    <div class="newacc">
+        <h6>Don't Have account ? <a href="/register">Register </a>Here !</h6>
+    </div>
+    </div>
+</body>
+</html>

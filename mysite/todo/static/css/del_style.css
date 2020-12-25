@@ -31,9 +31,27 @@
     margin: 5px auto;
     width: 100px;
     height: 25px;
+    background-color:antiquewhite
 }
 .cancel_button a{
     text-decoration:none;
     color: black;
     font-size:15px;
+    background-color:antiquewhite;
+    
+}
+.update_form{
+    background: white;
+}
+.update_form label{
+    background-color:white;
+    font-family: 'Andika New Basic', sans-serif;
+
+}
+.update_form input{
+    background-color:aliceblue;
+    font-family: 'Andika New Basic', sans-serif;
+}
+#update_confirm{
+    background-color:burlywood
 }
