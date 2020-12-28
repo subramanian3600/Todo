@@ -21,7 +21,7 @@ def dashboard(request):
     return render(request,'dashboard.html',context)
 
 @login_required(login_url='login')
-def home(request):
+def home( request):
     tasks=Task.objects.all()
     
     form=TaskForm()
